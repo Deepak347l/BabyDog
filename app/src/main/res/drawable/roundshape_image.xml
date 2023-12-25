@@ -1,0 +1,24 @@
+<!-- drawable/oval_2_copy.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="115dp"
+    android:height="105dp"
+    android:viewportWidth="115"
+    android:viewportHeight="105"
+    >
+    <group>
+        <clip-path
+            android:pathData="M115 52.5C115 81.4949 89.2564 105 57.5 105C25.7436 105 0 81.4949 0 52.5C0 23.5051 25.7436 0 57.5 0C89.2564 0 115 23.5051 115 52.5Z"
+            />
+        <path
+            android:pathData="M0 0V105H115V0"
+            android:fillColor="#FFFCFC"
+            />
+        <path
+            android:pathData="M115 52.5C115 81.4949 89.2564 105 57.5 105C25.7436 105 0 81.4949 0 52.5C0 23.5051 25.7436 0 57.5 0C89.2564 0 115 23.5051 115 52.5Z"
+            android:strokeWidth="2"
+            android:strokeColor="#808080"
+            />
+    </group>
+</vector>

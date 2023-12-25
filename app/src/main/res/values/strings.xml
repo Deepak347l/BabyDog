@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Babydoge Miner Cloud Mining</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id" translatable="false">960928569207-8s574b6aof69dk9rumgq64uppk6pcqd5.apps.googleusercontent.com</string>
+    <string name="agreed">Agreed</string>
+    <string name="term_condition">1:Your Account Will Be Deleted if it\'s Not Active For 1 Month.\n2:If we Found Any illigal,Cheating or Fraudulent Activites Related To Your Account,
+    Your Account Will be Deleted &amp; You Will Be Banned.</string>
+</resources>

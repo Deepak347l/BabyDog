@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context=".Fragments.Spin">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <RelativeLayout
+            android:id="@+id/availSpin"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/spinImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/spinwheeel"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/spinBtn"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:textAlignment="center"
+        android:text="SPIN"
+        android:background="@drawable/rectangle_shape"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/availSpin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:padding="5dp"
+                android:layout_margin="15dp"
+                android:id="@+id/spinDes"
+                android:layout_alignParentBottom="true"
+                android:text="Free Spin Available "
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@+id/spinDes"
+                android:id="@+id/spinCount"
+                android:padding="5dp"
+                android:layout_margin="15dp"
+                android:layout_alignParentBottom="true"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:text="5" />
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

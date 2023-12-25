@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/linear20xxxmmm"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/img1xxxmmm"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/imageview2xxxmmm"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/withdralhistorywalet"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:padding="8dp"
+                android:id="@+id/head1"
+                android:layout_toRightOf="@+id/linear20xxxmmm"
+                android:text="STATUS : pending"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:layout_toRightOf="@+id/linear20xxxmmm"
+                android:layout_below="@+id/head1"
+                android:id="@+id/desc1"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:text="Date : 19/09/2007" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:layout_toRightOf="@+id/linear20xxxmmm"
+                android:layout_below="@+id/desc1"
+                android:id="@+id/desc12"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:text="Amount : 2500000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:layout_toRightOf="@+id/linear20xxxmmm"
+                android:layout_below="@+id/desc12"
+                android:id="@+id/desc123"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:text="Lbank : contactdevloperdk347@gmail.com" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

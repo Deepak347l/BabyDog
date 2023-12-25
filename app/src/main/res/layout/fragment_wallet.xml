@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context=".Fragments.Wallet">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/balanceDetails"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_color2"
+        >
+
+        <TextView
+                               android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                              android:fontFamily="@font/poppins_medium"
+                                android:includeFontPadding="false"
+                                android:padding="5dp"
+                                android:layout_margin="15dp"
+                                android:id="@+id/balanceDes2"
+                                android:layout_centerHorizontal="true"
+                                android:text="Balance"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/availToken2"
+                               android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:includeFontPadding="false"
+                                android:layout_marginBottom="15dp"
+                                android:layout_below="@+id/balanceDes2"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="18sp"
+                                android:textColor="@android:color/black"
+                                android:text="2500000 Tokens" />
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/usernameWWUU2"
+                                android:layout_below="@+id/availToken2"
+                                android:background="@drawable/custom_coler"
+                                android:drawablePadding="8dp"
+                                android:hint="Enter Your LBank Uid"
+                                android:inputType="textEmailAddress"
+                                android:padding="8dp"
+                                android:textColor="@android:color/black"
+                               android:textColorHighlight="@android:color/black"
+                                />
+                            <com.google.android.material.textfield.TextInputEditText
+                               android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_height="50dp"
+                               android:id="@+id/usernameWWUU12"
+                               android:background="@drawable/custom_coler"
+                                android:drawablePadding="8dp"
+                               android:hint="Enter Amount"
+                               android:inputType="number"
+                              android:padding="8dp"
+                                android:textColor="@android:color/black"
+                                android:layout_below="@+id/usernameWWUU2"
+                                android:textColorHighlight="@android:color/black"
+                                />
+                          <Button
+                                android:id="@+id/withdrawlbtn2"
+                             android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/usernameWWUU12"
+                               android:layout_centerHorizontal="true"
+                                android:text="Conform wITHdRAW"
+                                android:layout_margin="10dp"
+                            android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                              android:fontFamily="@font/poppins_medium"
+                                android:textStyle="normal"
+                               android:includeFontPadding="false"
+                               android:outlineSpotShadowColor="@android:color/darker_gray"
+                                android:backgroundTint="#00796b"/>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_below="@+id/withdrawlbtn2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="25dp"
+                               android:orientation="vertical"
+                                app:cardCornerRadius="15dp"
+                               app:cardElevation="1dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp"
+                                    >
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                       android:fontFamily="@font/poppins_medium"
+                                        android:includeFontPadding="false"
+                                        android:padding="5dp"
+                                        android:layout_margin="15dp"
+                                        android:id="@+id/textInformation"
+                                       android:singleLine="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:text="PLEASE Note"
+                                        android:textAllCaps="true"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp"
+                                        />
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:includeFontPadding="false"
+                                        android:padding="5dp"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:id="@+id/textInformation1"
+                                        android:layout_below="@+id/textInformation"
+                                       android:singleLine="true"
+                                       android:layout_centerHorizontal="true"
+                                       android:text="*Only LBank Adress is Accepted"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="14sp"
+                                        />
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:includeFontPadding="false"
+                                        android:padding="5dp"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:id="@+id/textInformation2"
+                                       android:layout_below="@+id/textInformation1"
+                                        android:layout_centerHorizontal="true"
+                                        android:text="*Minimum Withdraw Amount is 2,500,000 Token"
+                                        android:textColor="@android:color/black"
+                                      android:textSize="14sp"
+                                       />
+                               </RelativeLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+</RelativeLayout>

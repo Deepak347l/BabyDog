@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/wellcomemessage1xa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textColor="@color/md_theme_light_scrim"
+            android:textSize="22sp"
+            android:text="Wellcome to, "
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/wellcomemessage"
+            android:layout_below="@+id/wellcomemessage1xa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textColor="@color/md_theme_light_scrim"
+            android:textSize="20sp"
+            android:text="Babydoge Miner Cloud Mining"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginRight="10dp"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/wellcomemessage1"
+            android:layout_below="@+id/wellcomemessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textColor="#6D2BE1"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Login To Continue"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView1a"
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            android:layout_below="@+id/wellcomemessage1"
+            android:layout_margin="25dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/animationlogin" />
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_below="@+id/animationView1a"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:backgroundTint="#6531C3"
+            android:text="Login with Google"
+            android:textColor="@color/md_theme_light_scrim"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+        <Button
+            android:id="@+id/signInButton2"
+            android:layout_below="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:backgroundTint="#6531C3"
+            android:text="Login with Anonymously"
+            android:textColor="@color/md_theme_light_scrim"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextViewx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/signInButton2"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="5dp"
+            android:text="By Clicking on the above button you agree to our Privacy Policy,Terms &amp; Conditions."
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="#111111" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
